@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>greet</title>
+</head>
+<body>	
+    <h2>Let's Make Trend</h2>
+   
+
+	<input placeholder="What's On Your Mind?" style="height:110px;" type="text" id="yourTweet" /><br><br>
+	<button  type="button" onclick="sayGreeting()">Tweet</button>
+ 
+	<script>
+		function sayGreeting() {
+			yourTweet= document.getElementById("yourTweet").value;
+		  if (yourTweet == "" || !yourTweet)
+		  	alert("Silakan isi Tweet terlebih dahulu")
+		  else
+		  	document.write(yourTweet)
+		}
+    </script><br>
+        <a href="index.html"> Kembali</a>
+</body>
+</html>

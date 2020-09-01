@@ -1,0 +1,35 @@
+   <html>
+<head>
+    <meta charset = 'utf-8'>
+    <title>Form</title>
+    <script type = 'text/javascript'>
+        var userName; //user name
+        var password; // password
+        function getuserName() {   //when this function is called, I retrieve the values and display them
+            return document.getElementById("user_name").value;
+        }
+        function getSecondName()    {
+            return document.getElementById(" password").value;
+        }
+        function display()  {
+            userName = getuserName();
+         password = getSecondName();
+            window.alert("username anda adalah "+userName + " dan passwordnya yaitu "+ password);
+        }
+
+    </script>
+
+</head>
+<body>
+
+  
+
+    <form id='form' method = 'post'>
+        <p> Username: <input type='text' id = "user_name"/></p>
+        <p> Password: <input type='password' id = " password"/> </p>
+        <p><input id ="Submit" type = "button" value = 'submit' onclick="display()" /></p>
+    </form><br>
+
+    <a href="index.html"> Kembali</a>
+</body>
+</html>
